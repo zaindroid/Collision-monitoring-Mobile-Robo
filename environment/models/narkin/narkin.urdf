@@ -1,9 +1,5 @@
 <?xml version="1.0"?>
-<robot name="Narkin" version="1.0">
-
-   <!--Youbot -->
-
-
+<robot name="Narkin" version="1.0"> 
    <!--Narko -->
     <gazebo>
       <plugin name="base_controller" filename="libgazebo_ros_planar_move.so">
@@ -72,12 +68,6 @@
           </geometry>
         </collision>
     </link>
-
-	  <joint name="Actuator0" type="fixed">
-	    <origin xyz="0 0 0.15" rpy="0 0 0" />
-	    <parent link="narko_base_link" />
-	    <child link="base_link" />
-	  </joint>
 
     <link name="shoulder_link">
       <inertial>
@@ -327,4 +317,11 @@
         effort="9"
         velocity="1.2218" />
     </joint>
+
+	<joint name="Actuator0" type="fixed">
+	<origin xyz="0 0 0.15" rpy="0 0 0" />
+	<parent link="narko_base_link" />
+	<child link="base_link" />
+	</joint>
+    
 </robot>
