@@ -318,10 +318,10 @@
         velocity="1.2218" />
     </joint>
 
-	<joint name="Actuator0" type="fixed">
+<joint name="joint_8" type="fixed">
 	<origin xyz="0 0 0.15" rpy="0 0 0" />
 	<parent link="narko_base_link" />
 	<child link="base_link" />
-	</joint>
+</joint>
     
 </robot>
